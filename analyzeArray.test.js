@@ -40,7 +40,7 @@ test("Empty array", () => {
 });
 
 test("Not an array", () => {
-  expect(analyzeArray('FunFun')).toEqual(
+  expect(analyzeArray("FunFun")).toEqual(
     "This is not a real array or there are in some not a number element"
   );
 });
@@ -51,9 +51,8 @@ test("Not an array", () => {
   );
 });
 
-
 test("Not an array", () => {
-  expect(analyzeArray({1: 'aaa', 2: 'bbb'})).toEqual(
+  expect(analyzeArray({ 1: "aaa", 2: "bbb" })).toEqual(
     "This is not a real array or there are in some not a number element"
   );
 });
